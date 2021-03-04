@@ -6,15 +6,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class WebPageWrapper {
     WebDriver driver;
-    public int ImplicitWaitSeconds = 0;
-    public int TimeOutSeconds = 0;
+    public int implicitWaitSeconds = 0;
+    public int timeOutSeconds = 0;
     public int explicitWait = 10;
     public int milisecondsInterval = 100;
 
-    public WebPageWrapper()
-    {
-
-    }
+    public WebPageWrapper()   {}
 
     public WebPageWrapper(WebDriver driver)
     {
