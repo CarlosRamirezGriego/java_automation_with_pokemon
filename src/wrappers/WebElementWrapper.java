@@ -1,9 +1,7 @@
 package wrappers;
 
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
-
 
 public class WebElementWrapper {
     public String selector;
@@ -12,21 +10,17 @@ public class WebElementWrapper {
     public String elementText = null;
     private int amountElements = 0;
 
-
-
     public WebElementWrapper()
     {
         this.selector = null;
         this.selectorMethod = null;
     }
 
-
     public void ResetElement()
     {
         allMatchingResults.clear();
         amountElements = 0;
     }
-
 
     public WebElementWrapper(String selector, String selectorMethod)
     {
@@ -38,21 +32,19 @@ public class WebElementWrapper {
         return amountElements;
     }
 
-
     public void CountMatchingElements()
     {
         amountElements = allMatchingResults.size();
     }
 
-
     public WebElement ReturnTheIWebElementInPosition(int i)
     {
-        WebElement TestWE = null;
+        WebElement testElement = null;
         if (!(i <= 0 || i > amountElements))
         {
-            TestWE = allMatchingResults.get(i - 1);
+            testElement = allMatchingResults.get(i - 1);
         }
-        return TestWE;
+        return testElement;
     }
 
 }

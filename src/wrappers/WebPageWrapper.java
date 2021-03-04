@@ -11,6 +11,7 @@ public class WebPageWrapper {
     public int explicitWait = 10;
     public int milisecondsInterval = 100;
 
+
     public WebPageWrapper()   {}
 
     public WebPageWrapper(WebDriver driver)
