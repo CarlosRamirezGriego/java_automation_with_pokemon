@@ -1,4 +1,4 @@
-package AutomationClasses;
+package wrappers;
 
 import org.openqa.selenium.WebElement;
 

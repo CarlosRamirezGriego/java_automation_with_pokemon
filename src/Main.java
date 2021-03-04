@@ -1,4 +1,4 @@
-import AutomationClasses.WebPageWrapper;
+import wrappers.WebPageWrapper;
 
 public class Main {
 
