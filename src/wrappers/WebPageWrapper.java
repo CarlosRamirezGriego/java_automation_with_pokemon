@@ -41,7 +41,7 @@ public class WebPageWrapper {
                 this.driver = new FirefoxDriver();
                 break;
             default:
-                driver = new ChromeDriver();
+                this.driver = new ChromeDriver();
                 break;
 
         }
