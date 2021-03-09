@@ -1,4 +1,4 @@
-package wrappers;
+package Wrappers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,13 +10,14 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
 public class WebPageWrapper {
     WebDriver driver;
     public int implicitWaitSeconds = 0;
     public int timeOutSeconds = 0;
-    public int explicitWait = 10;
-    public int milisecondsInterval = 100;
+    public long explicitWait = 10;
+    public long milisecondsInterval = 100;
     WebElementWrapper testElement;
 
 
@@ -198,5 +199,150 @@ public class WebPageWrapper {
         return we;
     }
 
+    public boolean SearchForThisElementForAnAmountOfTime(WebElementWrapper we)
+    {
+        we.allMatchingResults.clear();
+        int timer = 0;
+        boolean isDisplayed = false;
+        long cycles = this.explicitWait * 1000 / this.milisecondsInterval;
+        switch (we.selectorMethod.toLowerCase())
+        {
+            case "id":
+                while(timer < cycles)
+                {
+                    List<WebElement> elementsList = this.driver.findElements(By.id(we.selector));
+                    elementsList.forEach(iwe -> {
+                        we.allMatchingResults.add(iwe);
+                    });
+                    we.CountMatchingElements();
+                    if (we.GetAmountElements() > 0)
+                    {
+                        isDisplayed = true;
+                        break;
+                    }
+                    else
+                    {
+                        timer = timer + 1;
+                    }
+                    pause(milisecondsInterval);
+                }
+                break;
+            case "class":
+                while (timer < cycles)
+                {
+                    List<WebElement> elementsList = this.driver.findElements(By.className(we.selector));
+                    elementsList.forEach(iwe -> {
+                        we.allMatchingResults.add(iwe);
+                    });
+                    we.CountMatchingElements();
+                    if (we.GetAmountElements() > 0)
+                    {
+                        isDisplayed = true;
+                        break;
+                    }
+                    else
+                    {
+                        timer = timer + 1;
+                    }
+                    pause(milisecondsInterval);
+                }
+                break;
+            case "name":
+                while (timer < cycles)
+                {
+                    List<WebElement> elementsList = this.driver.findElements(By.name(we.selector));
+                    elementsList.forEach(iwe -> {
+                        we.allMatchingResults.add(iwe);
+                    });
+                    we.CountMatchingElements();
+                    if (we.GetAmountElements() > 0)
+                    {
+                        isDisplayed = true;
+                        break;
+                    }
+                    else
+                    {
+                        timer = timer + 1;
+                    }
+                    pause(milisecondsInterval);
+                }
+                break;
+            case "css":
+                while (timer < cycles)
+                {
+                    List<WebElement> elementsList = this.driver.findElements(By.cssSelector(we.selector));
+                    elementsList.forEach(iwe -> {
+                        we.allMatchingResults.add(iwe);
+                    });
+                    we.CountMatchingElements();
+                    if (we.GetAmountElements() > 0)
+                    {
+                        isDisplayed = true;
+                        break;
+                    }
+                    else
+                    {
+                        timer = timer + 1;
+                    }
+                    pause(milisecondsInterval);
+                }
+                break;
+            case "xpath":
+                while (timer < cycles)
+                {
+                    List<WebElement> elementsList = this.driver.findElements(By.xpath(we.selector));
+                    elementsList.forEach(iwe -> {
+                        we.allMatchingResults.add(iwe);
+                    });
+                    we.CountMatchingElements();
+                    if (we.GetAmountElements() > 0)
+                    {
+                        isDisplayed = true;
+                        break;
+                    }
+                    else
+                    {
+                        timer = timer + 1;
+                    }
+                    pause(milisecondsInterval);
+                }
+                break;
+            case "linktext":
+                while (timer < cycles)
+                {
+                    List<WebElement> elementsList = this.driver.findElements(By.linkText(we.selector));
+                    elementsList.forEach(iwe -> {
+                        we.allMatchingResults.add(iwe);
+                    });
+                    we.CountMatchingElements();
+                    if (we.GetAmountElements() > 0)
+                    {
+                        isDisplayed = true;
+                        break;
+                    }
+                    else
+                    {
+                        timer = timer + 1;
+                    }
+                    pause(milisecondsInterval);
+                }
+                break;
+        }
+        we.CountMatchingElements();
+        this.testElement = we;
+        return isDisplayed;
+    }
+
+    public void pause(long ms)
+    {
+        try
+        {
+            Thread.sleep(ms);
+        }
+        catch(InterruptedException ex)
+        {
+            Thread.currentThread().interrupt();
+        }
+    }
 
 }
