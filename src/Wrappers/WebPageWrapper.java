@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
@@ -154,7 +156,7 @@ public class WebPageWrapper {
 
     public WebElementWrapper SearchForThisElement(WebElementWrapper we)
     {
-        we.allMatchingResults.clear();
+        we.allMatchingResults = new ArrayList<>();
         switch(we.selectorMethod.toLowerCase(Locale.ROOT))
         {
             case "id":
@@ -201,7 +203,7 @@ public class WebPageWrapper {
 
     public boolean SearchForThisElementForAnAmountOfTime(WebElementWrapper we)
     {
-        we.allMatchingResults.clear();
+        we.allMatchingResults = new ArrayList<>();
         int timer = 0;
         boolean isDisplayed = false;
         long cycles = this.explicitWait * 1000 / this.milisecondsInterval;
