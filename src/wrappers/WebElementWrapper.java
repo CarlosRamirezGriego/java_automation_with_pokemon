@@ -1,4 +1,4 @@
-package wrappers;
+package Wrappers;
 
 import org.openqa.selenium.WebElement;
 import java.util.List;
