@@ -20,8 +20,6 @@ public class WebPageWrapper {
     WebElementWrapper testElement;
 
 
-    public WebPageWrapper()   {}
-
     public WebPageWrapper(WebDriver driver)
     {
         this.driver = driver;
@@ -37,10 +35,10 @@ public class WebPageWrapper {
         switch (browser)
         {
             case "gc":
-                driver = new ChromeDriver();
+                this.driver = new ChromeDriver();
                 break;
             case "ff":
-                driver = new FirefoxDriver();
+                this.driver = new FirefoxDriver();
                 break;
             default:
                 driver = new ChromeDriver();
@@ -51,22 +49,22 @@ public class WebPageWrapper {
 
     public void LoadWebPage(String url)
     {
-        driver.get(url);
+        this.driver.get(url);
     }
 
     public void MaximizeWindow()
     {
-        driver.manage().window().maximize();
+        this.driver.manage().window().maximize();
     }
 
     public void CloseBrowser()
     {
-        driver.close();
+        this.driver.close();
     }
 
     public void RefreshBrowser()
     {
-        driver.navigate().refresh();
+        this.driver.navigate().refresh();
     }
 
     public void UpdateExplicitWait(int seconds)
@@ -91,8 +89,8 @@ public class WebPageWrapper {
         we.elementText = null;
         if (we.GetAmountElements() == 1)
         {
-            WebElement Result = we.ReturnTheIWebElementInPosition(1);
-            we.elementText = Result.getText();
+            WebElement result = we.ReturnTheIWebElementInPosition(1);
+            we.elementText = result.getText();
         }
         return we;
     }
@@ -102,8 +100,8 @@ public class WebPageWrapper {
         we = SearchForThisElement(we);
         if (we.GetAmountElements() == 1)
         {
-            WebElement Result = we.ReturnTheIWebElementInPosition(1);
-            Result.click();
+            WebElement result = we.ReturnTheIWebElementInPosition(1);
+            result.click();
         }
         return we;
     }
@@ -114,8 +112,8 @@ public class WebPageWrapper {
         we = SearchForThisElement(we);
         if (we.GetAmountElements() == 1)
         {
-            WebElement Result = we.ReturnTheIWebElementInPosition(1);
-            Result.sendKeys(text);
+            WebElement result = we.ReturnTheIWebElementInPosition(1);
+            result.sendKeys(text);
         }
         return we;
     }
@@ -159,37 +157,37 @@ public class WebPageWrapper {
         switch(we.selectorMethod.toLowerCase(Locale.ROOT))
         {
             case "id":
-                List<WebElement> elementsListID = driver.findElements(By.id(we.selector));
+                List<WebElement> elementsListID = this.driver.findElements(By.id(we.selector));
                 elementsListID.forEach(iwe -> {
                     we.allMatchingResults.add(iwe);
                 });
                 break;
             case "class":
-                List<WebElement> elementsListClass = driver.findElements(By.className(we.selector));
+                List<WebElement> elementsListClass = this.driver.findElements(By.className(we.selector));
                 elementsListClass.forEach(iwe -> {
                     we.allMatchingResults.add(iwe);
                 });
                 break;
             case "name":
-                List<WebElement> elementsListName = driver.findElements(By.name(we.selector));
+                List<WebElement> elementsListName = this.driver.findElements(By.name(we.selector));
                 elementsListName.forEach(iwe -> {
                     we.allMatchingResults.add(iwe);
                 });
                 break;
             case "css":
-                List<WebElement> elementsListCSS = driver.findElements(By.cssSelector(we.selector));
+                List<WebElement> elementsListCSS = this.driver.findElements(By.cssSelector(we.selector));
                 elementsListCSS.forEach(iwe -> {
                     we.allMatchingResults.add(iwe);
                 });
                 break;
             case "xpath":
-                List<WebElement> elementsListXpath = driver.findElements(By.xpath(we.selector));
+                List<WebElement> elementsListXpath = this.driver.findElements(By.xpath(we.selector));
                 elementsListXpath.forEach(iwe -> {
                     we.allMatchingResults.add(iwe);
                 });
                 break;
             case "linktext":
-                List<WebElement> elementsListLinkText = driver.findElements(By.linkText(we.selector));
+                List<WebElement> elementsListLinkText = this.driver.findElements(By.linkText(we.selector));
                 elementsListLinkText.forEach(iwe -> {
                     we.allMatchingResults.add(iwe);
                 });
