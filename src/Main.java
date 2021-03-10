@@ -1,10 +1,18 @@
-import wrappers.WebPageWrapper;
+import PokemonDataBasePage.BusinessLogic.PokemonDBHomeBusinessLogic;
+import PokemonDataBasePage.PageObjects.PokemonDBHome;
+import QAMinds.Casa;
+import Wrappers.WebPageWrapper;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+
         WebPageWrapper wp = new WebPageWrapper("gc");
-        wp.LoadWebPage("http://www.google.com");
+        PokemonDBHomeBusinessLogic dbHomeObj = new PokemonDBHomeBusinessLogic(wp);
+        dbHomeObj.LoadThisPage();
+        dbHomeObj.ClickTheModalOkButtonIfItsPresent();
+        dbHomeObj.NavigateToNationalDexFromQuickLink();
+        wp.CloseBrowser();
+
     }
 }
