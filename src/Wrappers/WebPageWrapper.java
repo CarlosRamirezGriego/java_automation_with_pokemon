@@ -104,7 +104,9 @@ public class WebPageWrapper {
         if (we.GetAmountElements() == 1)
         {
             WebElement result = we.ReturnTheIWebElementInPosition(1);
-            result.click();
+            Actions actions = NewActionsObject();
+            actions.click(result);
+            actions.perform();
         }
         return we;
     }
