@@ -1,9 +1,29 @@
 package QAMinds;
 
+import java.util.Scanner;
+
 public class EjercicioOperadores {
     int edadPapa = 54;
     int edadRoberto = 18;
     int edadAmigo = 18;
+
+
+    public EjercicioOperadores()
+    {
+        int[] edades = new int[3];
+        String[] peticion = {"Papá", "Roberto", "Amigo"};
+        for(int i = 0; i <= 2; i++)
+        {
+            System.out.println("Ingrese la edad de "+peticion[i]+":");
+            Scanner sc = new Scanner(System.in);
+            int edad = sc.nextInt();
+            edades[i] = edad;
+        }
+        this.edadPapa = edades[0];
+        this.edadRoberto = edades[1];
+        this.edadAmigo = edades[2];
+    }
+
 
     public EjercicioOperadores(int edadAmigo)
     {
