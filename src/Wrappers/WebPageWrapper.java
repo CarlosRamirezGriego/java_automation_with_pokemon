@@ -20,7 +20,8 @@ public class WebPageWrapper {
     public int timeOutSeconds = 0;
     public long explicitWait = 10;
     public long milisecondsInterval = 100;
-    WebElementWrapper testElement;
+    WebElementWrapper testElement = new WebElementWrapper();
+    private String selectedBrowser = "gc";
 
 
     public WebPageWrapper(WebDriver driver)
@@ -42,12 +43,17 @@ public class WebPageWrapper {
                 break;
             case "ff":
                 this.driver = new FirefoxDriver();
+                this.selectedBrowser = "ff";
                 break;
             default:
                 this.driver = new ChromeDriver();
                 break;
-
         }
+    }
+
+    public String getSelectedBrowser()
+    {
+        return this.selectedBrowser;
     }
 
     public void LoadWebPage(String url)
@@ -63,6 +69,7 @@ public class WebPageWrapper {
     public void CloseBrowser()
     {
         this.driver.close();
+        this.driver.quit();
     }
 
     public void RefreshBrowser()
