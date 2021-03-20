@@ -1,4 +1,5 @@
 package QAMinds;
+import java.util.Objects;
 
 public class Animal{
 
@@ -21,11 +22,48 @@ public class Animal{
         this.comida = comida;
     }
 
+    @Override
+    public boolean equals(Object nuevoObjecto){
+        if(this==nuevoObjecto){
+            return true;
+        }
+        if(nuevoObjecto==null||nuevoObjecto.getClass()!=this.getClass()){
+            return false;
+        }
+        if(nuevoObjecto instanceof Animal)
+        {
+            Animal objAnimal = (Animal)nuevoObjecto;
+            return objAnimal.nombre.equals(this.nombre)
+                    && objAnimal.piernas == this.piernas;
+        }
+        return false;
+    }
+
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(this.nombre, this.piernas);
+    }
+
+    @Override
+    public String toString(){
+        String blablabla = "Clase Animal tiene las siguientes propiedades " + "{ nombre: "+this.nombre + ", piernas: " +
+                this.piernas + "}";
+        return blablabla;
+    }
+
+
+
+
+
+
+
+
+
     public Animal()
     {
 
     }
-
 
     public void setNombre(String nombre)
     {
@@ -36,7 +74,6 @@ public class Animal{
     {
         return this.nombre;
     }
-
 
     public void setPiernas(int piernas)
     {
