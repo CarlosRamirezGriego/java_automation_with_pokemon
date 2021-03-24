@@ -22,6 +22,7 @@ public class WebPageWrapper {
     public long milisecondsInterval = 100;
     WebElementWrapper testElement = new WebElementWrapper();
     private String selectedBrowser = "gc";
+    private boolean isRemoteDriver = false;
 
 
     public WebPageWrapper(WebDriver driver)
@@ -68,8 +69,21 @@ public class WebPageWrapper {
 
     public void CloseBrowser()
     {
-        this.driver.close();
-        this.driver.quit();
+        if(isRemoteDriver)
+        {
+            this.driver.quit();
+        }
+        else
+        {
+            if(selectedBrowser == "gc")
+            {
+                this.driver.close();
+            }
+            else
+            {
+                this.driver.close();
+            }
+        }
     }
 
     public void RefreshBrowser()
