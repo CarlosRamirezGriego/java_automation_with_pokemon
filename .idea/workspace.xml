@@ -10,27 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97d0f4f7-fac2-4528-8c6c-e3826815f3c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebElementWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java_automation_with_pokemon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_automation_with_pokemon.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PokemonDataBasePage/BusinessLogic/PokemonDBHomeBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/BusinessLogic/PokemonDBHomeBusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PokemonDataBasePage/PageObjects/PokemonDBHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/PageObjects/PokemonDBHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/CalculadoraBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/CalculadoraBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Casa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/EjercicioOperadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/EjercicioOperadores.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Multiplicar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Multiplicar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/IPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/IPizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/PizzaDeQueso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaDeQueso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/PizzaItaliana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaItaliana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/PizzaMexicana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaMexicana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/Pizzeria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/Pizzeria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QAMinds/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Suma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wrappers/WebPageWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wrappers/WebElementWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,15 +100,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="java_automation_with_pokemon" />
@@ -135,13 +121,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java_automation_with_pokemon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AutomationATDD.QAMinds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AutomationATDD.QAMinds" />
+      <option name="MAIN_CLASS_NAME" value="AutomationATDD.QAMinds.SimpleClassTest" />
+      <option name="METHOD_NAME" value="GivenThatIAddTwoNumbers_TheClassShouldAddThem" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -150,6 +152,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -198,7 +201,8 @@
       <workItem from="1616596178667" duration="415000" />
       <workItem from="1616637605526" duration="4869000" />
       <workItem from="1616858073463" duration="8933000" />
-      <workItem from="1616870075670" duration="311000" />
+      <workItem from="1616870075670" duration="685000" />
+      <workItem from="1616870797679" duration="4052000" />
     </task>
     <servers />
   </component>
