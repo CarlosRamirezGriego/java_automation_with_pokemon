@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="java_automation_with_pokemon:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="97d0f4f7-fac2-4528-8c6c-e3826815f3c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebElementWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_automation_with_pokemon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_automation_with_pokemon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PokemonDataBasePage/BusinessLogic/PokemonDBHomeBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/BusinessLogic/PokemonDBHomeBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PokemonDataBasePage/PageObjects/PokemonDBHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/PageObjects/PokemonDBHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/CalculadoraBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/CalculadoraBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Casa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Casa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/EjercicioOperadores.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/EjercicioOperadores.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Multiplicar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Multiplicar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/IPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/IPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/PizzaDeQueso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaDeQueso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/PizzaItaliana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaItaliana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/PizzaMexicana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaMexicana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Pizzeria/Pizzeria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/Pizzeria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QAMinds/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/Suma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wrappers/WebPageWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wrappers/WebElementWrapper.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +47,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="clase0306" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,8 +120,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -103,6 +131,19 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,6 +172,33 @@
       <workItem from="1615253632711" duration="8549000" />
       <workItem from="1615337714656" duration="1793000" />
       <workItem from="1615339547879" duration="65000" />
+      <workItem from="1615346492499" duration="784000" />
+      <workItem from="1615400004026" duration="1046000" />
+      <workItem from="1615431412893" duration="2099000" />
+      <workItem from="1615433803393" duration="58000" />
+      <workItem from="1615474853915" duration="51000" />
+      <workItem from="1615475000396" duration="35000" />
+      <workItem from="1615487008974" duration="859000" />
+      <workItem from="1615588803408" duration="2273000" />
+      <workItem from="1615648380781" duration="2203000" />
+      <workItem from="1615654388696" duration="720000" />
+      <workItem from="1615655197700" duration="8622000" />
+      <workItem from="1615681540528" duration="321000" />
+      <workItem from="1615747052660" duration="452000" />
+      <workItem from="1615823748304" duration="273000" />
+      <workItem from="1616035186246" duration="2378000" />
+      <workItem from="1616255769023" duration="3594000" />
+      <workItem from="1616262677614" duration="777000" />
+      <workItem from="1616264994593" duration="1021000" />
+      <workItem from="1616461361325" duration="1801000" />
+      <workItem from="1616463443040" duration="942000" />
+      <workItem from="1616466223348" duration="1952000" />
+      <workItem from="1616468196563" duration="1561000" />
+      <workItem from="1616470449777" duration="215000" />
+      <workItem from="1616596178667" duration="415000" />
+      <workItem from="1616637605526" duration="4869000" />
+      <workItem from="1616858073463" duration="8933000" />
+      <workItem from="1616870075670" duration="311000" />
     </task>
     <servers />
   </component>

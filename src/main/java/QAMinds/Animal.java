@@ -22,6 +22,17 @@ public class Animal{
         this.comida = comida;
     }
 
+    public Animal(String nombre, int piernas)
+    {
+        this.nombre = nombre;
+        this.piernas = piernas;
+        this.sonido = "hablar";
+        this.comida = "semillas";
+    }
+
+
+
+
     @Override
     public boolean equals(Object nuevoObjecto){
         if(this==nuevoObjecto){
@@ -51,12 +62,6 @@ public class Animal{
                 this.piernas + "}";
         return blablabla;
     }
-
-
-
-
-
-
 
 
 
