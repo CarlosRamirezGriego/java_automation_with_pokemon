@@ -1,9 +1,7 @@
 package Wrappers;
 
 import org.openqa.selenium.WebElement;
-
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class WebElementWrapper {

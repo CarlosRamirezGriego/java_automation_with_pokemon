@@ -9,10 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
-import java.util.concurrent.TimeUnit;
 
 public class WebPageWrapper {
     WebDriver driver;
@@ -20,7 +18,9 @@ public class WebPageWrapper {
     public int timeOutSeconds = 0;
     public long explicitWait = 10;
     public long milisecondsInterval = 100;
-    WebElementWrapper testElement;
+    WebElementWrapper testElement = new WebElementWrapper();
+    private String selectedBrowser = "gc";
+    private boolean isRemoteDriver = false;
 
 
     public WebPageWrapper(WebDriver driver)
@@ -42,12 +42,17 @@ public class WebPageWrapper {
                 break;
             case "ff":
                 this.driver = new FirefoxDriver();
+                this.selectedBrowser = "ff";
                 break;
             default:
                 this.driver = new ChromeDriver();
                 break;
-
         }
+    }
+
+    public String getSelectedBrowser()
+    {
+        return this.selectedBrowser;
     }
 
     public void LoadWebPage(String url)
@@ -62,7 +67,21 @@ public class WebPageWrapper {
 
     public void CloseBrowser()
     {
-        this.driver.close();
+        if(isRemoteDriver)
+        {
+            this.driver.quit();
+        }
+        else
+        {
+            if(selectedBrowser == "gc")
+            {
+                this.driver.close();
+            }
+            else
+            {
+                this.driver.close();
+            }
+        }
     }
 
     public void RefreshBrowser()

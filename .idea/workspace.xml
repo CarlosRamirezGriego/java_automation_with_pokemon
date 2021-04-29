@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="java_automation_with_pokemon:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="97d0f4f7-fac2-4528-8c6c-e3826815f3c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_automation_with_pokemon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_automation_with_pokemon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="clase0306" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,14 +100,17 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="java_automation_with_pokemon" />
@@ -107,8 +121,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="java_automation_with_pokemon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="AutomationATDD.QAMinds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="AutomationATDD.QAMinds" />
+      <option name="MAIN_CLASS_NAME" value="AutomationATDD.QAMinds.SimpleClassTest" />
+      <option name="METHOD_NAME" value="GivenThatIAddTwoNumbers_TheClassShouldAddThem" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -131,6 +175,34 @@
       <workItem from="1615253632711" duration="8549000" />
       <workItem from="1615337714656" duration="1793000" />
       <workItem from="1615339547879" duration="65000" />
+      <workItem from="1615346492499" duration="784000" />
+      <workItem from="1615400004026" duration="1046000" />
+      <workItem from="1615431412893" duration="2099000" />
+      <workItem from="1615433803393" duration="58000" />
+      <workItem from="1615474853915" duration="51000" />
+      <workItem from="1615475000396" duration="35000" />
+      <workItem from="1615487008974" duration="859000" />
+      <workItem from="1615588803408" duration="2273000" />
+      <workItem from="1615648380781" duration="2203000" />
+      <workItem from="1615654388696" duration="720000" />
+      <workItem from="1615655197700" duration="8622000" />
+      <workItem from="1615681540528" duration="321000" />
+      <workItem from="1615747052660" duration="452000" />
+      <workItem from="1615823748304" duration="273000" />
+      <workItem from="1616035186246" duration="2378000" />
+      <workItem from="1616255769023" duration="3594000" />
+      <workItem from="1616262677614" duration="777000" />
+      <workItem from="1616264994593" duration="1021000" />
+      <workItem from="1616461361325" duration="1801000" />
+      <workItem from="1616463443040" duration="942000" />
+      <workItem from="1616466223348" duration="1952000" />
+      <workItem from="1616468196563" duration="1561000" />
+      <workItem from="1616470449777" duration="215000" />
+      <workItem from="1616596178667" duration="415000" />
+      <workItem from="1616637605526" duration="4869000" />
+      <workItem from="1616858073463" duration="8933000" />
+      <workItem from="1616870075670" duration="685000" />
+      <workItem from="1616870797679" duration="4052000" />
     </task>
     <servers />
   </component>
