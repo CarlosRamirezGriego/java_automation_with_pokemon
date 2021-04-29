@@ -17,8 +17,6 @@ public class Palindrome {
         for ( int i = length - 1; i >= 0; i-- ) {
             reversed = reversed + original.charAt(i);
         }
-        System.out.println(original);
-        System.out.println(reversed);
         if (original.equals(reversed)) {
             return true;
         }
