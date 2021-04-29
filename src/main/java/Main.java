@@ -1,6 +1,7 @@
 import PokemonDataBasePage.BusinessLogic.PokemonDBHomeBusinessLogic;
+import QAMinds.FizzBuzz;
+import QAMinds.Palindrome;
 import Wrappers.WebPageWrapper;
-
 
 public class Main {
 
@@ -8,31 +9,44 @@ public class Main {
     //public static void main(String[] args) throws MalformedURLException {
     public static void main(String[] args){
 
-
-         WebPageWrapper wp = new WebPageWrapper("ff");
+/***
+         WebPageWrapper wp = new WebPageWrapper("gc");
          wp.MaximizeWindow();
          PokemonDBHomeBusinessLogic dbHomeObj = new PokemonDBHomeBusinessLogic(wp);
          dbHomeObj.LoadThisPage();
          dbHomeObj.ClickTheModalOkButtonIfItsPresent();
          dbHomeObj.NavigateToNationalDexFromQuickLink();
          wp.CloseBrowser();
+ ***/
+
+
+        FizzBuzz a = new FizzBuzz(150);
+        a.RunFizzBuzz();
+
+
+        Palindrome check = new Palindrome("texto");
+        System.out.println(check.CheckIfPalindrome());
+        check.value = "Madam.";
+        System.out.println(check.CheckIfPalindrome());
 
 
 
-        /***
-        int[] indexes = new int[] {1, 3, 2, 8, 1};
-        String[] tacos = new String[] {"Asada","Pastor", "Frijol", "Tripita" };
 
-        for (int i : indexes)
-        {
-            try{
-                System.out.println(tacos[i]);
-            }
-            catch (Exception e){
-                throw new CafeDerramadoException();
-            }
+
+    /***
+    int[] indexes = new int[] {1, 3, 2, 8, 1};
+    String[] tacos = new String[] {"Asada","Pastor", "Frijol", "Tripita" };
+
+    for (int i : indexes)
+    {
+        try{
+            System.out.println(tacos[i]);
         }
-         ***/
+        catch (Exception e){
+            throw new CafeDerramadoException();
+        }
+    }
+     ***/
 
 
 
