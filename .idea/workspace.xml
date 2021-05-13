@@ -11,9 +11,10 @@
   <component name="ChangeListManager">
     <list default="true" id="97d0f4f7-fac2-4528-8c6c-e3826815f3c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_automation_with_pokemon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java_automation_with_pokemon.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/PageObjects/PokemonDBHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/PageObjects/PokemonDBHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/WebElementWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebElementWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageWrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +111,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
   </component>
-  <component name="RunManager" selected="TestNG.SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="QAMinds.SeleniumExercises" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="java_automation_with_pokemon" />
@@ -152,8 +158,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +209,11 @@
       <workItem from="1616858073463" duration="8933000" />
       <workItem from="1616870075670" duration="685000" />
       <workItem from="1616870797679" duration="4052000" />
+      <workItem from="1620087917241" duration="5332000" />
+      <workItem from="1620149696606" duration="432000" />
+      <workItem from="1620483724850" duration="9880000" />
+      <workItem from="1620511669095" duration="273000" />
+      <workItem from="1620864450949" duration="5895000" />
     </task>
     <servers />
   </component>

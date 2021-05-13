@@ -19,6 +19,12 @@ public class PokemonDBHome {
         return modalOkButton;
     }
 
+    public String GetThisPageTitle()
+    {
+        String title = this.webPage.GetPageTitle();
+        return title;
+    }
+
 
     public boolean WasTheModalOKButtonPresentAfter(int time)
     {

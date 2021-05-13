@@ -9,7 +9,7 @@ public class WebElementWrapper {
     public String selectorMethod;
     public List<WebElement> allMatchingResults = new ArrayList<>();
     public String elementText = null;
-    private int amountElements = 0;
+    public int amountElements = 0;
 
     public WebElementWrapper()
     {
@@ -19,8 +19,8 @@ public class WebElementWrapper {
 
     public void ResetElement()
     {
-        allMatchingResults.clear();
-        amountElements = 0;
+        this.allMatchingResults.clear();
+        this.amountElements = 0;
     }
 
     public WebElementWrapper(String selector, String selectorMethod)
@@ -30,20 +30,20 @@ public class WebElementWrapper {
     }
 
     public int GetAmountElements(){
-        return amountElements;
+        return this.amountElements;
     }
 
     public void CountMatchingElements()
     {
-        amountElements = allMatchingResults.size();
+        this.amountElements = allMatchingResults.size();
     }
 
     public WebElement ReturnTheIWebElementInPosition(int i)
     {
         WebElement testElement = null;
-        if (!(i <= 0 || i > amountElements))
+        if (!(i <= 0 || i > this.amountElements))
         {
-            testElement = allMatchingResults.get(i - 1);
+            testElement = this.allMatchingResults.get(i - 1);
         }
         return testElement;
     }

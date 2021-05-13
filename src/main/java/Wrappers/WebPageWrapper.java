@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class WebPageWrapper {
-    WebDriver driver;
+    public WebDriver driver;
     public int implicitWaitSeconds = 0;
     public int timeOutSeconds = 0;
     public long explicitWait = 10;
@@ -63,6 +63,34 @@ public class WebPageWrapper {
     public void MaximizeWindow()
     {
         this.driver.manage().window().maximize();
+    }
+
+    public void GoBack()
+    {
+        this.driver.navigate().back();
+    }
+
+    public void GoForward()
+    {
+        this.driver.navigate().forward();
+    }
+
+    public String GetSourceCode()
+    {
+        String source = this.driver.getPageSource();
+        return source;
+    }
+
+    public String GetPageTitle()
+    {
+        String title = this.driver.getTitle();
+        return title;
+    }
+
+    public String GetPageURL()
+    {
+        String url = this.driver.getCurrentUrl();
+        return url;
     }
 
     public void CloseBrowser()
@@ -130,6 +158,19 @@ public class WebPageWrapper {
         return we;
     }
 
+    public WebElementWrapper ClickSpecificElementFromResults(WebElementWrapper we, int index)
+    {
+        we.CountMatchingElements();
+        if (we.amountElements >= index && we.amountElements > 0)
+        {
+            WebElement result = we.ReturnTheIWebElementInPosition(index);
+            Actions actions = NewActionsObject();
+            actions.click(result);
+            actions.perform();
+        }
+        return we;
+    }
+
 
     public WebElementWrapper EnterTextInElement(WebElementWrapper we, String text)
     {
@@ -141,6 +182,19 @@ public class WebPageWrapper {
         }
         return we;
     }
+
+    public WebElementWrapper PressEnterKey(WebElementWrapper we)
+    {
+        we = SearchForThisElement(we);
+        if (we.GetAmountElements() == 1)
+        {
+            WebElement result = we.ReturnTheIWebElementInPosition(1);
+            result.sendKeys(Keys.ENTER);
+        }
+        return we;
+    }
+
+
 
     public Actions NewActionsObject()
     {
