@@ -1,13 +1,9 @@
-import PokemonDataBasePage.BusinessLogic.PokemonDBHomeBusinessLogic;
-import QAMinds.FizzBuzz;
-import QAMinds.Palindrome;
-import QAMinds.SeleniumExercises.*;
+import QAMinds.SeleniumExercises.Module1.SampleXPath;
+import QAMinds.SeleniumExercises.Module2.*;
 import Wrappers.WebElementWrapper;
 import Wrappers.WebPageWrapper;
-import org.apache.commons.exec.util.StringUtils;
-import org.openqa.selenium.WebElement;
 
-import java.util.Stack;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,17 +13,11 @@ public class Main {
     //public static void main(String[] args) throws MalformedURLException {
     public static void main(String[] args) {
 
-        SeleniumHandsOn2 sel2 = new SeleniumHandsOn2();
-        sel2.RunScript();
 
-        SeleniumHandsOn3 sel3 = new SeleniumHandsOn3();
-        sel3.RunScript();
 
-        SeleniumHandsOn4 sel4 = new SeleniumHandsOn4();
-        sel4.RunScript();
-
-        Challenge2 sel = new Challenge2();
+        SelectMethodEx sel = new SelectMethodEx();
         sel.RunScript();
+
 
 
 

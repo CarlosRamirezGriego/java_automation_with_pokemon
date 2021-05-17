@@ -1,4 +1,4 @@
-package QAMinds.SeleniumExercises;
+package QAMinds.SeleniumExercises.Module1;
 import Wrappers.WebElementWrapper;
 import Wrappers.WebPageWrapper;
 

@@ -270,6 +270,18 @@ public class WebPageWrapper {
                     we.allMatchingResults.add(iwe);
                 });
                 break;
+            case "partiallinktext":
+                List<WebElement> elementsListPartialLinkText = this.driver.findElements(By.partialLinkText(we.selector));
+                elementsListPartialLinkText.forEach(iwe -> {
+                    we.allMatchingResults.add(iwe);
+                });
+                break;
+            case "tagname":
+                List<WebElement> elementsListTagName = this.driver.findElements(By.tagName(we.selector));
+                elementsListTagName.forEach(iwe -> {
+                    we.allMatchingResults.add(iwe);
+                });
+                break;
         }
         we.CountMatchingElements();
         this.testElement = we;
