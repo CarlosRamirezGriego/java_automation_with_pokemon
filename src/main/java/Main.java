@@ -13,31 +13,11 @@ public class Main {
     //public static void main(String[] args) throws MalformedURLException {
     public static void main(String[] args) {
 
+        LocatorsEx3 l3 = new LocatorsEx3();
+        l3.RunScript();
 
-
-        SelectMethodEx sel = new SelectMethodEx();
+        Tiktok sel = new Tiktok();
         sel.RunScript();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -109,23 +89,7 @@ public class Main {
 
 
 
-        /**
-         PokemonDBHomeBusinessLogic dbHomeObj = new PokemonDBHomeBusinessLogic(wp);
-         dbHomeObj.LoadThisPage();
-         dbHomeObj.ClickTheModalOkButtonIfItsPresent();
-         dbHomeObj.NavigateToNationalDexFromQuickLink();
-         wp.CloseBrowser();
-         **/
 
-
-        /**
-         DesiredCapabilities cap = DesiredCapabilities.chrome();
-         cap.setCapability("version","");
-         cap.setPlatform(Platform.LINUX);
-         String Node = "http://192.168.8.53:4444/wd/hub";
-
-         WebDriver driver = new RemoteWebDriver(new URL(Node), cap);
-         **/
     }
 
 

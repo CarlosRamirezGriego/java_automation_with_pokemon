@@ -12,10 +12,6 @@
     <list default="true" id="97d0f4f7-fac2-4528-8c6c-e3826815f3c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Challenge2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/Challenge2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/SeleniumHandsOn2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/SeleniumHandsOn2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/SeleniumHandsOn3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/SeleniumHandsOn3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/SeleniumHandsOn4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/SeleniumHandsOn4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageWrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
@@ -129,19 +125,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java_automation_with_pokemon" />
       <extension name="coverage">
@@ -219,6 +202,8 @@
       <workItem from="1620511669095" duration="273000" />
       <workItem from="1620864450949" duration="9054000" />
       <workItem from="1621090490015" duration="6840000" />
+      <workItem from="1621300380930" duration="4244000" />
+      <workItem from="1621453401780" duration="2978000" />
     </task>
     <servers />
   </component>

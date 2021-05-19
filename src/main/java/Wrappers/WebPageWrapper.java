@@ -232,7 +232,7 @@ public class WebPageWrapper {
     public WebElementWrapper SearchForThisElement(WebElementWrapper we)
     {
         we.allMatchingResults = new ArrayList<>();
-        switch(we.selectorMethod.toLowerCase(Locale.ROOT))
+        switch(we.selectorMethod.toLowerCase())
         {
             case "id":
                 List<WebElement> elementsListID = this.driver.findElements(By.id(we.selector));
@@ -287,6 +287,7 @@ public class WebPageWrapper {
         this.testElement = we;
         return we;
     }
+
 
     public boolean SearchForThisElementForAnAmountOfTime(WebElementWrapper we)
     {
