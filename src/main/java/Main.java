@@ -13,11 +13,9 @@ public class Main {
     //public static void main(String[] args) throws MalformedURLException {
     public static void main(String[] args) {
 
-        LocatorsEx3 l3 = new LocatorsEx3();
+        AmazonCSS01 l3 = new AmazonCSS01();
         l3.RunScript();
 
-        Tiktok sel = new Tiktok();
-        sel.RunScript();
 
 
 
