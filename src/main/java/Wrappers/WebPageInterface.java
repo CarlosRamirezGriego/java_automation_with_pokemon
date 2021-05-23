@@ -392,7 +392,7 @@ public class WebPageInterface {
             }
             else
             {
-                throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Invisible State");
+                throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Visible State");
             }
 
 
@@ -440,7 +440,7 @@ public class WebPageInterface {
             }
             else
             {
-                throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Invisible State");
+                throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Visible State");
             }
         }
     }
@@ -496,6 +496,10 @@ public class WebPageInterface {
             WebElement result = we.ReturnTheIWebElementInPosition(1);
             actions.moveToElement(result);
             actions.perform();
+            if(we.isSlowElement)
+            {
+                pause(200);
+            }
         }
 
     }
@@ -585,7 +589,7 @@ public class WebPageInterface {
             }
             else
             {
-                throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Invisible State");
+                throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Visible State");
             }
         }
     }
@@ -700,7 +704,7 @@ public class WebPageInterface {
             }
             else
             {
-                throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Invisible State");
+                throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Visible State");
             }
         }
     }
