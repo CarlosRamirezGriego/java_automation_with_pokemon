@@ -1,49 +1,34 @@
 package PokemonDataBasePage.PageObjects;
 
-import Wrappers.WebElementWrapper;
-import Wrappers.WebPageWrapper;
+import Wrappers.*;
 
 public class PokemonDBHome {
-    public WebElementWrapper nationalDexQuickLink = new WebElementWrapper("main[id='main'] a[href='/pokedex/national']", "css");
-    public WebElementWrapper modalOkButton = new WebElementWrapper("button[class='btn btn-primary gdpr-accept']", "css");
-    public WebPageWrapper webPage;
+    public ElementInterface nationalDexQuickLink = new ElementInterface("main[id='main'] a[href='/pokedex/national']", Options.SearchMethods.CSS);
+    public ElementInterface modalOkButton = new ElementInterface("button[class='btn btn-primary gdpr-accept']", Options.SearchMethods.CSS);
+    public WebPageInterface webPage;
 
-    public PokemonDBHome(WebPageWrapper webPage)
+    public PokemonDBHome(WebPageInterface webPage)
     {
         this.webPage = webPage;
     }
 
-    public WebElementWrapper FindModalOkButton()
-    {
-        modalOkButton = this.webPage.SearchForThisElement(modalOkButton);
-        return modalOkButton;
+    public void FindModalOkButton() throws Exception {
+        this.webPage.SearchForTheseSelectorsData(this.modalOkButton);
     }
 
     public String GetThisPageTitle()
     {
-        String title = this.webPage.GetPageTitle();
+        String title = this.webPage.ReturnWebPageTitle();
         return title;
     }
 
 
-    public boolean WasTheModalOKButtonPresentAfter(int time)
-    {
-        this.webPage.UpdateExplicitWait(time);
-        boolean wasPresent = this.webPage.SearchForThisElementForAnAmountOfTime(modalOkButton);
-        return wasPresent;
+    public void ClickOKModalButton() throws Exception {
+        this.webPage.ClickThisElement(this.modalOkButton);
     }
 
 
-    public WebElementWrapper ClickOKModalButton()
-    {
-        modalOkButton = this.webPage.ClickElement(modalOkButton);
-        return modalOkButton;
-    }
-
-
-    public WebElementWrapper ClickNationalDexLink()
-    {
-        nationalDexQuickLink = this.webPage.ClickElement(nationalDexQuickLink);
-        return nationalDexQuickLink;
+    public void ClickNationalDexLink() throws Exception {
+        this.webPage.ClickThisElement(this.nationalDexQuickLink);
     }
 }

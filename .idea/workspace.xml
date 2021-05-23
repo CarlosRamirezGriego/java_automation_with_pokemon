@@ -11,8 +11,35 @@
   <component name="ChangeListManager">
     <list default="true" id="97d0f4f7-fac2-4528-8c6c-e3826815f3c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AutomationATDD/QAMinds/SimpleClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AutomationATDD/QAMinds/SimpleClassTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/BusinessLogic/PokemonDBHomeBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/BusinessLogic/PokemonDBHomeBusinessLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/PageObjects/PokemonDBHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/PageObjects/PokemonDBHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/CafeDerramadoException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/CalculadoraBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Casa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/EjercicioOperadores.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/FizzBuzz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Multiplicar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/IPizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaDeQueso.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaItaliana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/PizzaMexicana.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Pizzeria/Pizzeria.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/Challenge2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/SampleXPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/SeleniumHandsOn2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/SeleniumHandsOn3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module1/SeleniumHandsOn4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module2/AmazonCSS01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module2/LocatorsEx3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module2/LocatorsEx4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module2/SelectMethodEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SeleniumExercises/Module2/Tiktok.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/SimpleClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/QAMinds/Suma.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +152,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="java_automation_with_pokemon" />
       <extension name="coverage">
@@ -203,7 +243,10 @@
       <workItem from="1620864450949" duration="9054000" />
       <workItem from="1621090490015" duration="6840000" />
       <workItem from="1621300380930" duration="4244000" />
-      <workItem from="1621453401780" duration="2978000" />
+      <workItem from="1621453401780" duration="3155000" />
+      <workItem from="1621468859154" duration="8370000" />
+      <workItem from="1621698121719" duration="2128000" />
+      <workItem from="1621724206081" duration="10049000" />
     </task>
     <servers />
   </component>
@@ -221,5 +264,12 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="priceElements.get(0)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

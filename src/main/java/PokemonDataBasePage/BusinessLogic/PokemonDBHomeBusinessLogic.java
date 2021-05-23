@@ -1,12 +1,12 @@
 package PokemonDataBasePage.BusinessLogic;
 
 import PokemonDataBasePage.PageObjects.PokemonDBHome;
-import Wrappers.WebPageWrapper;
+import Wrappers.WebPageInterface;
 
 public class PokemonDBHomeBusinessLogic {
-    public WebPageWrapper webPage;
+    public WebPageInterface webPage;
 
-    public PokemonDBHomeBusinessLogic(WebPageWrapper wp)
+    public PokemonDBHomeBusinessLogic(WebPageInterface wp)
     {
         this.webPage = wp;
     }
@@ -17,18 +17,14 @@ public class PokemonDBHomeBusinessLogic {
         this.webPage.LoadWebPage("https://pokemondb.net/");
     }
 
-    public void ClickTheModalOkButtonIfItsPresent()
+
+    public void ClickModalOkButton()  throws Exception
     {
         PokemonDBHome pkdbhome = new PokemonDBHome(this.webPage);
-        boolean isModalPresent = pkdbhome.WasTheModalOKButtonPresentAfter(3);
-        if(isModalPresent)
-        {
-            pkdbhome.ClickOKModalButton();
-        }
+        pkdbhome.ClickOKModalButton();
     }
 
-    public void NavigateToNationalDexFromQuickLink()
-    {
+    public void NavigateToNationalDexFromQuickLink() throws Exception {
         PokemonDBHome pkdbhome = new PokemonDBHome(this.webPage);
         pkdbhome.ClickNationalDexLink();
     }
