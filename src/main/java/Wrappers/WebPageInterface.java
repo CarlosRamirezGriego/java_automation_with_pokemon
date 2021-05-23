@@ -13,8 +13,8 @@ import java.util.List;
 public class WebPageInterface {
 
     public WebDriver testDriver;
-    public int explicitWait = 25;
-    public final int defaultExplicit = 25;
+    public int explicitWait = 5;
+    public final int defaultExplicit = 5;
     public int milisecondsInterval = 10;
     public ElementInterface testElement = new ElementInterface();
     public Boolean isSeleniumGrid = false;
@@ -698,6 +698,8 @@ public class WebPageInterface {
         we.ResetElement();
         if (we.expectedMatches == Options.ExpectedMatches.ONE)
         {
+            if(we.isSlowElement)
+            {explicitWait = 30;}
             List<WebElement> matchingResults = SearchLoop(Options.ExpectedMatches.ONE, we.selectorMethod, we.selector);
             ThisElementShouldBeVisible(we);
             int amountElements = matchingResults.size();
@@ -712,6 +714,7 @@ public class WebPageInterface {
                     {
                         HighLightAllTheElementsThatMatch(we);
                     }
+                    this.explicitWait = this.defaultExplicit;
                     return we;
                 }
                 else
@@ -734,6 +737,8 @@ public class WebPageInterface {
         we.ResetElement();
         if (we.expectedMatches == Options.ExpectedMatches.ONE)
         {
+            if(we.isSlowElement)
+            {explicitWait = 30;}
             List<WebElement> matchingResults = SearchLoop(Options.ExpectedMatches.ONE, we.selectorMethod, we.selector);
             int amountElements = matchingResults.size();
             if (amountElements == 1)
@@ -741,6 +746,7 @@ public class WebPageInterface {
                 we.allMatchingResults = matchingResults;
                 we.CountMatchingElements();
                 we.hasBeenSearched = true;
+                this.explicitWait = this.defaultExplicit;
                 return we;
             }
             else
@@ -758,11 +764,14 @@ public class WebPageInterface {
         we.ResetElement();
         if (we.expectedMatches == Options.ExpectedMatches.NONE)
         {
+            if(we.isSlowElement)
+            {explicitWait = 30;}
             List<WebElement> matchingResults = SearchLoop(Options.ExpectedMatches.NONE, we.selectorMethod, we.selector);
             int amountElements = matchingResults.size();
             if (amountElements == 0)
             {
                 we.hasBeenSearched = true;
+                this.explicitWait = this.defaultExplicit;
                 return we;
             }
             else
@@ -780,6 +789,8 @@ public class WebPageInterface {
         we.ResetElement();
         if (we.expectedMatches == Options.ExpectedMatches.MANY)
         {
+            if(we.isSlowElement)
+            {explicitWait = 30;}
             List<WebElement> matchingResults = SearchLoop(Options.ExpectedMatches.MANY, we.selectorMethod, we.selector);
             int amountElements = matchingResults.size();
             if (amountElements >= 1)
@@ -791,6 +802,7 @@ public class WebPageInterface {
                 {
                     HighLightAllTheElementsThatMatch(we);
                 }
+                this.explicitWait = this.defaultExplicit;
                 return we;
             }
             else
@@ -808,6 +820,8 @@ public class WebPageInterface {
         we.ResetElement();
         if (we.expectedMatches == Options.ExpectedMatches.ONE)
         {
+            if(we.isSlowElement)
+            {explicitWait = 30;}
             List<WebElement> matchingResults = SearchLoop(Options.ExpectedMatches.ONE, we.selectorMethod, we.selector, iwe);
             int amountElements = matchingResults.size();
             if (amountElements == 1)
@@ -821,6 +835,7 @@ public class WebPageInterface {
                     {
                         HighLightAllTheElementsThatMatch(we);
                     }
+                    this.explicitWait = this.defaultExplicit;
                     return we;
                 }
                 else
@@ -843,6 +858,8 @@ public class WebPageInterface {
         we.ResetElement();
         if (we.expectedMatches == Options.ExpectedMatches.ONE)
         {
+            if(we.isSlowElement)
+            {explicitWait = 30;}
             List<WebElement> matchingResults = SearchLoop(Options.ExpectedMatches.ONE, we.selectorMethod, we.selector, iwe);
             int amountElements = matchingResults.size();
             if (amountElements == 1)
@@ -850,6 +867,7 @@ public class WebPageInterface {
                 we.allMatchingResults = matchingResults;
                 we.CountMatchingElements();
                 we.hasBeenSearched = true;
+                this.explicitWait = this.defaultExplicit;
                 return we;
             }
             else
@@ -867,11 +885,14 @@ public class WebPageInterface {
         we.ResetElement();
         if (we.expectedMatches == Options.ExpectedMatches.NONE)
         {
+            if(we.isSlowElement)
+            {explicitWait = 30;}
             List<WebElement> matchingResults = SearchLoop(Options.ExpectedMatches.NONE, we.selectorMethod, we.selector, iwe);
             int amountElements = matchingResults.size();
             if (amountElements == 0)
             {
                 we.hasBeenSearched = true;
+                this.explicitWait = this.defaultExplicit;
                 return we;
             }
             else
@@ -889,6 +910,8 @@ public class WebPageInterface {
         we.ResetElement();
         if (we.expectedMatches == Options.ExpectedMatches.MANY)
         {
+            if(we.isSlowElement)
+            {explicitWait = 30;}
             List<WebElement> matchingResults = SearchLoop(Options.ExpectedMatches.MANY, we.selectorMethod, we.selector, iwe);
             int amountElements = matchingResults.size();
             if (amountElements > 1)
@@ -900,6 +923,7 @@ public class WebPageInterface {
                 {
                     HighLightAllTheElementsThatMatch(we);
                 }
+                this.explicitWait = this.defaultExplicit;
                 return we;
             }
             else

@@ -15,6 +15,7 @@ public class ElementInterface {
     public Boolean doValidation = true;
     public Boolean hasBeenSearched = false;
     public Boolean needsScroll = false;
+    public Boolean isSlowElement = false;
 
 
     public int getAmountElements() {
