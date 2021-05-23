@@ -279,6 +279,10 @@ public class WebPageInterface {
                 {
                     ScrollToThisElement(we);
                 }
+                if(we.isSlowElement)
+                {
+                    pause(200);
+                }
                 ActualClickAction(result);
             }
             else
@@ -288,6 +292,10 @@ public class WebPageInterface {
                 if(we.needsScroll)
                 {
                     ScrollToThisElement(we);
+                }
+                if(we.isSlowElement)
+                {
+                    pause(200);
                 }
                 ActualClickAction(result);
             }
@@ -302,6 +310,10 @@ public class WebPageInterface {
                 if(we.needsScroll)
                 {
                     ScrollToThisElement(we);
+                }
+                if(we.isSlowElement)
+                {
+                    pause(200);
                 }
                 WebElement result = we.ReturnTheIWebElementInPosition(index);
                 ActualClickAction(result);
@@ -319,6 +331,10 @@ public class WebPageInterface {
                 if(we.needsScroll)
                 {
                     ScrollToThisElement(we);
+                }
+                if(we.isSlowElement)
+                {
+                    pause(200);
                 }
                 WebElement result = we.ReturnTheIWebElementInPosition(index);
                 ActualClickAction(result);
