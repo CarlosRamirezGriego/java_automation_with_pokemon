@@ -26,6 +26,8 @@ public class PokemonDBHomeBusinessLogic {
 
     public void NavigateToNationalDexFromQuickLink() throws Exception {
         PokemonDBHome pkdbhome = new PokemonDBHome(this.webPage);
+        pkdbhome.SearchForNationalDexLink();
+        pkdbhome.nationalDexQuickLink.needsScroll = true;
         pkdbhome.ClickNationalDexLink();
     }
 

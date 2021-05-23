@@ -1,9 +1,6 @@
 package Wrappers;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -79,7 +76,6 @@ public class WebPageInterface {
     {
         OpenBrowser(testBrowser);
     }
-
 
     public void OpenBrowser(Options.Browsers testBrowser)
     {
@@ -163,6 +159,8 @@ public class WebPageInterface {
         this.explicitWait = seconds;
     }
 
+
+
     public void HighLightAllTheElementsThatMatch(ElementInterface we)
     {
         List<WebElement> sourceElements = new ArrayList<WebElement>();
@@ -181,6 +179,8 @@ public class WebPageInterface {
         }
     }
 
+
+
     public ElementInterface SearchForTheseSelectorsData(ElementInterface we) throws Exception {
         if (we.expectedMatches == Options.ExpectedMatches.ONE)
         {
@@ -195,13 +195,6 @@ public class WebPageInterface {
             return ThisElementShouldHaveNoMatch(we);
         }
     }
-
-
-
-
-
-
-
 
 
 
@@ -282,14 +275,20 @@ public class WebPageInterface {
             if (we.hasBeenSearched)
             {
                 WebElement result = we.ReturnTheIWebElementInPosition(1);
-                ScrollToThisElement(we);
+                if(we.needsScroll)
+                {
+                    ScrollToThisElement(we);
+                }
                 ActualClickAction(result);
             }
             else
             {
                 SearchForTheseSelectorsData(we);
                 WebElement result = we.ReturnTheIWebElementInPosition(1);
-                ScrollToThisElement(we);
+                if(we.needsScroll)
+                {
+                    ScrollToThisElement(we);
+                }
                 ActualClickAction(result);
             }
         }
@@ -300,7 +299,10 @@ public class WebPageInterface {
         {
             if (we.amountElements >= index && we.amountElements > 0)
             {
-                ScrollToThisElement(we);
+                if(we.needsScroll)
+                {
+                    ScrollToThisElement(we);
+                }
                 WebElement result = we.ReturnTheIWebElementInPosition(index);
                 ActualClickAction(result);
             }
@@ -314,7 +316,10 @@ public class WebPageInterface {
             SearchForTheseSelectorsData(we);
             if (we.amountElements >= index && we.amountElements > 0)
             {
-                ScrollToThisElement(we);
+                if(we.needsScroll)
+                {
+                    ScrollToThisElement(we);
+                }
                 WebElement result = we.ReturnTheIWebElementInPosition(index);
                 ActualClickAction(result);
             }
@@ -363,7 +368,10 @@ public class WebPageInterface {
             if (mainCheck)
             {
                 WebElement result = we.ReturnTheIWebElementInPosition(1);
-                ScrollToThisElement(we);
+                if(we.needsScroll)
+                {
+                    ScrollToThisElement(we);
+                }
                 ActualEnterTextAction(result, text);
             }
             else
@@ -379,6 +387,7 @@ public class WebPageInterface {
     {
         iwe.sendKeys(text);
     }
+
 
 
     public String GetThisElementText(ElementInterface we) throws Exception {
@@ -407,15 +416,16 @@ public class WebPageInterface {
             if (mainCheck)
             {
                 WebElement result = we.ReturnTheIWebElementInPosition(1);
-                ScrollToThisElement(we);
+                if(we.needsScroll)
+                {
+                    ScrollToThisElement(we);
+                }
                 return result.getText();
             }
             else
             {
                 throw new Exception("The Element with Selector Method: \"" + we.selectorMethod.toString() + "\" and Selector Path: \"" + we.selector + "\" was never set to Invisible State");
             }
-
-
         }
     }
 
@@ -484,7 +494,7 @@ public class WebPageInterface {
         {
             ThisElementShouldExistRegardlessVisibility(we);
             JavascriptExecutor js = (JavascriptExecutor)testDriver;
-            js.executeScript("arguments[0].scrollIntoView(true);", we.ReturnTheIWebElementInPosition(1));
+            js.executeScript("arguments[0].scrollIntoView();", we.ReturnTheIWebElementInPosition(1));
         }
     }
 

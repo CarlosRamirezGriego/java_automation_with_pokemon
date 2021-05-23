@@ -22,13 +22,19 @@ public class PokemonDBHome {
         return title;
     }
 
-
     public void ClickOKModalButton() throws Exception {
         this.webPage.ClickThisElement(this.modalOkButton);
+        this.modalOkButton.ExpectNoMatches();
+        this.webPage.SearchForTheseSelectorsData(this.modalOkButton);
     }
 
 
+    public void SearchForNationalDexLink() throws Exception {
+        this.webPage.SearchForTheseSelectorsData(this.nationalDexQuickLink);
+    }
+
     public void ClickNationalDexLink() throws Exception {
+        this.webPage.ThisElementShouldBeEnabled(this.nationalDexQuickLink);
         this.webPage.ClickThisElement(this.nationalDexQuickLink);
     }
 }

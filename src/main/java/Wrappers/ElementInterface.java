@@ -14,6 +14,7 @@ public class ElementInterface {
     public Options.ExpectedMatches actualMatches;
     public Boolean doValidation = true;
     public Boolean hasBeenSearched = false;
+    public Boolean needsScroll = false;
 
 
     public int getAmountElements() {
