@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="java_automation_with_pokemon:jar" />
-    </artifacts-to-build>
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97d0f4f7-fac2-4528-8c6c-e3826815f3c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/BusinessLogic/PokemonDBHomeBusinessLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/BusinessLogic/PokemonDBHomeBusinessLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/PageObjects/PokemonDBHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PokemonDataBasePage/PageObjects/PokemonDBHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/ElementInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/ElementInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Wrappers/WebPageInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
-    </list>
+    <list default="true" id="66c4081a-7ad1-4168-a641-767f8f186e0c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,221 +17,129 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="clase0306" />
-      </map>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="usePluginRegistry" value="true" />
+      </MavenGeneralSettings>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1pGzmeQ6aXp9uTcoAOJphPdJdSj" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2YzuCHMA82I4lgVUyj1QubIhJE8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/selenium-java-3.141.59/client-combined-3.141.59-sources.jar" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/carlo/OneDrive/Documentos/GitHub/pokemon_automation_with_java/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="QAMinds.SeleniumExercises" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pokemonapi.businesslogic" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="java_automation_with_pokemon" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+  <component name="RunManager" selected="JUnit.APITest.getPokemonInformation">
+    <configuration name="APITest.getPokemonInformation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokemon_automation_with_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="APITest" />
+      <option name="METHOD_NAME" value="getPokemonInformation" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="APITest.testGetPokemonByNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokemon_automation_with_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="APITest" />
+      <option name="METHOD_NAME" value="testGetPokemonByNumber" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="java_automation_with_pokemon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="AutomationATDD.QAMinds.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="AutomationATDD.QAMinds" />
-      <option name="MAIN_CLASS_NAME" value="AutomationATDD.QAMinds.SimpleClassTest" />
-      <option name="METHOD_NAME" value="GivenThatIAddTwoNumbers_TheClassShouldAddThem" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+    <configuration name="APITest.testLoadPokemonDB" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokemon_automation_with_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="APITest" />
+      <option name="METHOD_NAME" value="testLoadPokemonDB" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AbilityTests.abilityIdTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokemon_automation_with_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AbilityTests" />
+      <option name="METHOD_NAME" value="abilityIdTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OtherTests.calculator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pokemon_automation_with_java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OtherTests" />
+      <option name="METHOD_NAME" value="calculator" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="TestNG.SimpleClassTest.GivenThatIAddTwoNumbers_TheClassShouldAddThem" />
+        <item itemvalue="JUnit.APITest.getPokemonInformation" />
+        <item itemvalue="JUnit.OtherTests.calculator" />
+        <item itemvalue="JUnit.AbilityTests.abilityIdTests" />
+        <item itemvalue="JUnit.APITest.testGetPokemonByNumber" />
+        <item itemvalue="JUnit.APITest.testLoadPokemonDB" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="97d0f4f7-fac2-4528-8c6c-e3826815f3c9" name="Default Changelist" comment="" />
-      <created>1614824376815</created>
+      <changelist id="66c4081a-7ad1-4168-a641-767f8f186e0c" name="Changes" comment="" />
+      <created>1701540603408</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1614824376815</updated>
-      <workItem from="1614824380328" duration="152000" />
-      <workItem from="1614824571354" duration="412000" />
-      <workItem from="1614825146999" duration="4079000" />
-      <workItem from="1614903235146" duration="430000" />
-      <workItem from="1614908600008" duration="4099000" />
-      <workItem from="1614958498362" duration="119000" />
-      <workItem from="1615045235666" duration="2806000" />
-      <workItem from="1615253632711" duration="8549000" />
-      <workItem from="1615337714656" duration="1793000" />
-      <workItem from="1615339547879" duration="65000" />
-      <workItem from="1615346492499" duration="784000" />
-      <workItem from="1615400004026" duration="1046000" />
-      <workItem from="1615431412893" duration="2099000" />
-      <workItem from="1615433803393" duration="58000" />
-      <workItem from="1615474853915" duration="51000" />
-      <workItem from="1615475000396" duration="35000" />
-      <workItem from="1615487008974" duration="859000" />
-      <workItem from="1615588803408" duration="2273000" />
-      <workItem from="1615648380781" duration="2203000" />
-      <workItem from="1615654388696" duration="720000" />
-      <workItem from="1615655197700" duration="8622000" />
-      <workItem from="1615681540528" duration="321000" />
-      <workItem from="1615747052660" duration="452000" />
-      <workItem from="1615823748304" duration="273000" />
-      <workItem from="1616035186246" duration="2378000" />
-      <workItem from="1616255769023" duration="3594000" />
-      <workItem from="1616262677614" duration="777000" />
-      <workItem from="1616264994593" duration="1021000" />
-      <workItem from="1616461361325" duration="1801000" />
-      <workItem from="1616463443040" duration="942000" />
-      <workItem from="1616466223348" duration="1952000" />
-      <workItem from="1616468196563" duration="1561000" />
-      <workItem from="1616470449777" duration="215000" />
-      <workItem from="1616596178667" duration="415000" />
-      <workItem from="1616637605526" duration="4869000" />
-      <workItem from="1616858073463" duration="8933000" />
-      <workItem from="1616870075670" duration="685000" />
-      <workItem from="1616870797679" duration="4052000" />
-      <workItem from="1620087917241" duration="5332000" />
-      <workItem from="1620149696606" duration="432000" />
-      <workItem from="1620483724850" duration="9880000" />
-      <workItem from="1620511669095" duration="273000" />
-      <workItem from="1620864450949" duration="9054000" />
-      <workItem from="1621090490015" duration="6840000" />
-      <workItem from="1621300380930" duration="4244000" />
-      <workItem from="1621453401780" duration="3155000" />
-      <workItem from="1621468859154" duration="8370000" />
-      <workItem from="1621698121719" duration="2128000" />
-      <workItem from="1621724206081" duration="10049000" />
-      <workItem from="1621747840242" duration="2492000" />
+      <updated>1701540603408</updated>
+      <workItem from="1701540604422" duration="75000" />
+      <workItem from="1701540687095" duration="4435000" />
+      <workItem from="1701556188830" duration="8475000" />
+      <workItem from="1701905999138" duration="3867000" />
+      <workItem from="1701962376295" duration="25165000" />
+      <workItem from="1702044679906" duration="1599000" />
+      <workItem from="1702065009155" duration="1472000" />
+      <workItem from="1702321665532" duration="6913000" />
+      <workItem from="1702400497327" duration="189000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="priceElements.get(0)" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

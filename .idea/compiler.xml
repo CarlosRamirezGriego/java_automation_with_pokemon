@@ -6,11 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="java_automation_with_pokemon" />
+        <module name="pokemon_automation_with_java" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="java_automation_with_pokemon" target="15" />
-    </bytecodeTargetLevel>
   </component>
 </project>
