@@ -3,8 +3,6 @@ import org.junit.Test;
 import pokemonapi.businesslogic.PokemonAPILogic;
 import pokemonclasses.Pokemon;
 
-import java.io.IOException;
-
 public class APITest {
 
     @Test

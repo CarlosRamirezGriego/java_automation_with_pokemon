@@ -1,39 +1,33 @@
 package systemclasses.support;
 
+import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-
-import java.util.concurrent.TimeUnit;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import static java.lang.Thread.sleep;
 
 public class WebDriverHelper {
-
     public static WebDriver testDriver;
     public static int explicitWaitTime = 3;
     public static int retryInterval = 100;
     public static boolean useWait = true;
 
-
     public static void navigateToThisURL(String url)
     {
-        System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
         testDriver.get(url);
     }
 
     public static void initializeWebDriver(){
-        System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
-        WebDriverHelper.testDriver = new ChromeDriver();
-        WebDriverHelper.testDriver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+        WebDriverHelper.testDriver = WebDriverManager.chromedriver().create();
+        WebDriverHelper.testDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
     }
 
     public static void initializeWebDriver(long timeout){
-        System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
-        WebDriverHelper.testDriver = new ChromeDriver();
-        WebDriverHelper.testDriver.manage().timeouts().implicitlyWait(timeout, TimeUnit.SECONDS);
+        WebDriverHelper.testDriver = WebDriverManager.chromedriver().create();
+        WebDriverHelper.testDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeout));
     }
 
     public static boolean verifyElementIsPresentHandler(String selector){
@@ -95,7 +89,6 @@ public class WebDriverHelper {
         return expectedWasMet;
     }
 
-
     public static void hoverOverThisElement(String selector)
     {
         WebElement element = WebDriverHelper.returnThisWebElement(selector);
@@ -110,7 +103,6 @@ public class WebDriverHelper {
         actions.click(element).perform();
     }
 
-
     public static WebElement returnThisWebElement(String selector){
         WebElement we = null;
         boolean isPresent = WebDriverHelper.verifyElementIsPresentHandler(selector);
@@ -120,6 +112,4 @@ public class WebDriverHelper {
         }
         return we;
     }
-
-
 }
