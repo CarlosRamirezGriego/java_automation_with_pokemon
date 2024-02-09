@@ -1,6 +1,5 @@
 import org.junit.Assert;
 import org.junit.Test;
-import pokemonapi.businesslogic.PokemonAPILogic;
 import pokemonclasses.Ability;
 
 

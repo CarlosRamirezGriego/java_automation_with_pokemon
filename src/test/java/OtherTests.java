@@ -1,7 +1,6 @@
 import org.example.Calculator;
 import org.junit.Assert;
 import org.junit.Test;
-import pokemonclasses.Ability;
 
 public class OtherTests {
     @Test
